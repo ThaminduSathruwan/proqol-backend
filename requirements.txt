@@ -1,6 +1,6 @@
-Flask
+Flask===2.3.3
 Gunicorn
-flask-cors
-numpy
-pandas
-scikit-learn
+flask-cors===4.0.0
+numpy===1.25.2
+pandas===1.5.1
+scikit-learn===1.1.2
