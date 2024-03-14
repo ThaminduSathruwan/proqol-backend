@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ProQOL.com</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="icons8-favicon-94.png" rel="icon">
+  <!-- <link href="apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Presento
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Prediction Section ======= -->
+
+  <section id="prediction" class="prediction vh-100 overflow-y-auto"  style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');">
+    <div class="container border border-dark rounded p-4 bg-dark text-light" data-aos="fade-up">
+
+      <div class="section-title">
+        <h1>Predicting ProQOL</h1>
+        <h4>Find your professional quality of life as a nurse</h4>
+      </div>
+
+      <div class="row" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-8 mx-auto">
+          <form id="prediction-form" method="POST" role="form" class="border p-4 rounded">
+            <div class="row">
+              <div class="col-6 form-group mb-3">
+                <label for="Hospital" class="h5 fw-bold">Hospital</label>
+                <select name="Hospital" class="form-control form-control-lg" id="Hospital" required>
+                  <option value="NHSL">NHSL</option>
+                  <option value="LRH">LRH</option>
+                  <option value="DMH">DMH</option>
+                  <option value="NCI">NCI</option>
+                </select>
+              </div>
+              <div class="col form-group mb-3">
+                <label for="Main Unit" class="h5 fw-bold">Main Unit</label>
+                <select name="Main Unit" class="form-control form-control-lg" id="Main Unit" required>
+                  <option value="Inward ">Inward</option>
+                  <option value="OPD">OPD</option>
+                  <option value="Theater">Theater</option>
+                  <option value="ICU">ICU</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="BMI" class="h5 fw-bold">BMI</label>
+                <input type="text" name="BMI" class="form-control form-control-lg" id="BMI" placeholder="Type BMI value"
+                  required>
+              </div>
+              <div class="col form-group mb-3">
+                <label for="Age" class="h5 fw-bold">AGE</label>
+                <input type="text" name="Age" class="form-control form-control-lg" id="Age" placeholder="Type age value"
+                  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="P/N Ratio" class="h5 fw-bold">Average daily patient count per nurse</label>
+                <input type="text" name="P/N Ratio" class="form-control form-control-lg" id="P/N Ratio"
+                  placeholder="Type daily patient count Value" required>
+              </div>
+              <div class="col form-group mb-3">
+                <label for="Total Working Hours in a Week" class="h5 fw-bold">Total Working Hours in a Week</label>
+                <select name="Total Working Hours in a Week" class="form-control form-control-lg"
+                  id="Total Working Hours in a Week" required>
+                  <option value="<42 "> Less than 42 </option>
+                  <option value="42 - 63">42 - 63 hours</option>
+                  <option value="63 - 84">63 - 84 hours</option>
+                  <option value=">84 ">More than 84 hours</option>
+                </select>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col form-group mb-3">
+                <label for="Hours of Sleeping" class="h5 fw-bold">Average sleeping duration</label>
+                <select name="Hours of Sleeping" class="form-control form-control-lg" id="Hours of Sleeping" required>
+                  <option value="Less than 3 hours">Less than 3 hours</option>
+                  <option value="3 - 5 hours">3 - 5 hours</option>
+                  <option value="5 - 7 hours">5 - 7 hours</option>
+                  <option value="More than 7 hours">More than 7 hours</option>
+                </select>
+              </div>
+              <div class="col form-group mb-3">
+                <label for="Daily travelling Distance" class="h5 fw-bold">Daily travelling distance</label>
+                <select name="Daily travelling Distance" class="form-control form-control-lg"
+                  id="Daily travelling Distance" required>
+                  <option value="Less than 1 km">Less than 1 km</option>
+                  <option value="3 - 5 hours">1 - 5 km</option>
+                  <option value="5 - 7 hours">5 - 10 km</option>
+                  <option value="More than 7 hours">More than 10 km</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="Work Experience in this Hospital" class="h5 fw-bold">Years of work Experience in the current
+                Hospital</label>
+              <select name="Work Experience in this Hospital" class="form-control form-control-lg"
+                id="Work Experience in this Hospital" required>
+                <option value="Less than 5 years">Less than 5 years</option>
+                <option value="5 - 10 years">5 - 10 years</option>
+                <option value="10 - 20 years">10 - 20 years</option>
+                <option value="More than 20 years">More than 20 years</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="Relationship with the Superiors" class="h5 fw-bold">Rate your relationship with the
+                Superiors</label>
+              <select name="Relationship with the Superiors" class="form-control form-control-lg"
+                id="Relationship with the Superiors" required>
+                <option value="Very low">Very low</option>
+                <option value="Low">Low</option>
+                <option value="Average">Average</option>
+                <option value="High">High</option>
+                <option value="Very high">Very high</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="Frequency of involving patient emergencies" class="h5 fw-bold">Rate how often you involve
+                patient emergencies</label>
+              <select name="Frequency of involving patient emergencies" class="form-control form-control-lg"
+                id="Frequency of involving patient emergencies" required>
+                <option value="Low">Low</option>
+                <option value="Average">Average</option>
+                <option value="High">High</option>
+                <option value="Very high">Very high</option>
+              </select>
+            </div>
+            <div class="my-3">
+              <!-- <div class="loading">Loading</div> -->
+              <h2 class="error-message text-success text-center text-lg fw-bold"></h2>
+              <h2 class="prediction-cs text-success text-center text-lg fw-bold"></h2>
+              <h2 class="prediction-bo text-danger text-center text-lg fw-bold"></h2>
+              <h2 class="prediction-sts text-primary text-center text-lg fw-bold"></h2>
+            </div>
+            <div class="text-center"><button type="submit" class="btn btn-success btn-lg">Predict</button></div>
+          </form>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <div class="col-lg-12 fw-bold">
+          <div class="table-responsive">
+            <table class="table table-striped table-bordered table-lg text-center" style="font-size: 1.3rem;">
+              <thead class="table-dark">
+                <tr>
+                  <th>Your Score</th>
+                  <th>Compassion Satisfaction</th>
+                  <th>Burnout</th>
+                  <th>Secondary Traumatic Stress</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>22 or less</td>
+                  <td>Not Satisfied</td>
+                  <td>Low burnout</td>
+                  <td>Low secondary trauma</td>
+                </tr>
+                <tr>
+                  <td>Between 23 and 41</td>
+                  <td>Moderately satisfied</td>
+                  <td>Moderate burnout</td>
+                  <td>Moderate secondary trauma</td>
+                </tr>
+                <tr>
+                  <td>42 or more</td>
+                  <td>Highly satisfied</td>
+                  <td>Severe burnout</td>
+                  <td>Severe secondary trauma</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+  <!-- End Calculator Section -->
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.getElementById("prediction-form");
+      form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Serialize the form data
+        const formData = new FormData(form);
+
+        // Make an AJAX POST request to the server
+        fetch("http://127.0.0.1:5000/predict", {
+          method: "POST",
+          body: formData,
+        })
+          .then((response) => response.json()) // Assuming the server responds with JSON
+          .then((data) => {
+            // Update the page with the prediction result
+            const predictionCS = document.querySelector(".prediction-cs");
+            const predictionBO = document.querySelector(".prediction-bo");
+            const predictionSTS = document.querySelector(".prediction-sts");
+            const errorDiv = document.querySelector(".error-message");
+            if (data.error) {
+              // Handle errors
+              errorDiv.innerHTML = "Error: " + data.error;
+              predictionResult.innerHTML = "";// Clear prediction result
+              predictionCO.innerHTML = "";
+              predictionBO.innerHTML = "";
+              predictionSTS.innerHTML = "";
+            } else {
+              // Display the prediction result
+              errorDiv.innerHTML = ""; // Clear error message
+              predictionCS.innerHTML = "Compassion Satisfaction Score: " + data.CS;
+              predictionBO.innerHTML = "Burnout Score: " + data.BO;
+              predictionSTS.innerHTML = "Secondary Traumatic Stress Score: " + data.STS;
+
+              form.reset(); // Clear the form
+            }
+          })
+          .catch((error) => {
+            // Handle any errors here
+            console.error(error);
+          });
+      });
+    });
+  </script>
+
+</body>
+
+</html>
